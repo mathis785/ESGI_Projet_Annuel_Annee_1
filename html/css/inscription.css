@@ -1,0 +1,211 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.register p a {text-decoration: none;}
+
+div{
+    margin-bottom: 20px;
+}
+h4{
+    font-size: 15px;
+}
+
+/* Captcha */
+.captcha {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid rgb(215, 215, 215);
+    border-radius: 5px;
+    background: white;
+    padding: 7px 12px ;
+}
+.captcha:hover {
+    background: rgba(252, 252, 252, 0.978);
+    border: 2px solid rgb(215, 215, 215);
+}
+.captcha.check {
+    width: 55px;
+    height: 55px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    background: white;
+    margin: 0px;
+    padding: 0px;
+}
+.captcha h3 {
+    font-size: 17px;
+    color: #212121;
+    font-family: sans-serif;
+    margin: 0px 0px 0px 10px;
+}
+.captcha img {
+    width: 50PX;
+    margin-left: auto;
+    position: relative;
+}
+
+/* Popup */
+.popup .overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(96, 96, 96, 0.7);
+    z-index: 1;
+    display: none;
+}
+.popup .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 450px;
+    height: 400px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 0px;
+}
+.popup .close-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color: #fff;
+    font-size: 25px;
+    font-weight:bold;
+    line-height: 25px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 0px 5px 0px 5px;
+}
+.popup .close-btn:hover {
+    color: red;
+    transition: 0.4s;
+}
+.popup.active .overlay {
+    display: block;
+}
+.popup.active .content{
+    transition: all 400ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+.content .title .titre {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.content .title img {
+    width: 60px;
+    margin-left: 20px;
+}
+.content .title {
+    background-color: #d7d7d7;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.content .title h1 {
+    color: #212121;
+    font-family: sans-serif;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.content .title h3 {
+    color: #626262;
+    font-family: sans-serif;
+    font-size: 12px;
+    margin: 0px;
+}
+.title .titre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 15px 0px; 
+}
+.content .puzzle_part {
+    background-color: #d7d7d7;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding:10px 15px;
+    margin-top: 15px;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+}
+
+/* puzzle */
+.content .puzzle_part h1{ 
+    text-align: center; 
+}
+.content .puzzle_part div{ 
+    display: grid; 
+    grid-template-columns: repeat(3,80px); 
+    width: 240; 
+    margin: auto;
+} 
+.content .puzzle_part img{ 
+    width:80px; 
+    box-sizing: content-box; 
+} 
+.content .puzzle_part .select{ 
+    outline: 4px solid rgb(255, 0, 0); 
+    outline-offset: -4px; 
+} 
+.content .puzzle_part #win {
+    text-align: center;
+    font-size: 25px;
+    color: rgb(255, 0, 0);
+    display: none;
+}

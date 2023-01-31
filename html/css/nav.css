@@ -1,0 +1,246 @@
+header
+{
+    border-bottom:1.5px solid #e4e4e4;
+    background-color: #fffffff3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+.logo a img
+{
+    width: 140px;
+    padding: 7px 0px;
+}
+
+.form {
+    position: relative;
+}
+.search input:after
+{
+    border: 2px solid rgb(246, 139, 30);
+    border-radius: 5px;
+}
+.search input:focus, .search input:active {
+    outline: none !important;
+    box-shadow: none;
+ }
+.form .fa-search {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #9ca3af
+}
+.form span {
+    position: absolute;
+    right: 17px;
+    top: 13px;
+    padding: 2px;
+    border-left: 1px solid #d1d5db;
+}
+.left-pan {
+    padding-left: 7px
+}
+.left-pan i {
+    padding-left: 10px
+}
+.form-input {
+    height: 55px;
+    text-indent: 33px;
+    border-radius: 20px
+}
+.form-input:focus {
+    box-shadow: none;
+    border: none
+}
+
+/* switch */
+.mode_sombre label
+{
+    position: relative;
+    width: 73px;
+    height: 30px;
+    background: #212121;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.mode_sombre label input
+{
+    appearance: none;
+}
+.mode_sombre label span
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 30px;
+    background: rgb(78, 78, 78);
+    border:6px solid  #212121;
+    border-radius: 22px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.mode_sombre label input:checked ~ span
+{
+    left: 33px;
+}
+.mode_sombre label span ion-icon
+{
+    color: rgb(156, 156, 156);
+    font-size: 1em;
+    transition: 0.5s;
+    padding-right: 0;
+}
+.mode_sombre label input:checked ~ span ion-icon
+{
+    color: rgba(255, 255, 255, 1);
+    filter: drop-shadow(0 0 4px #fff)
+            drop-shadow(0 0 5px #fff)          
+}
+/* links */ 
+.icons a,.profil
+{
+    text-decoration: none;
+}
+.icons a:hover, .icons .aide:hover, .icons .panier:hover
+{
+    color: rgb(246, 139, 30);
+    cursor: pointer;
+}
+.logo, .icons .profil, .icons .profil a, .aide, .panier .panier_componant, .mode_sombre
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profil a, .aide, .panier
+{
+    color: #212121;
+}
+.profil h3, .aide h3, .panier h3
+{
+    font-size: 15px;
+    margin: 0;
+}
+.profil a ion-icon, .aide ion-icon, .panier ion-icon
+{
+    font-size: 20px;
+}
+
+/* shadow on scroll */
+.banner
+{
+    position:relative;
+    width : 100%;
+    background-size: cover;
+    transition: 1s;
+    display: none;
+}
+header.sticky
+{
+    background-color: #ffffffea;
+    transition: 0.6s;
+    border-bottom:1.5px solid #e4e4e4;
+    box-shadow: 0rem 0rem 1rem 0rem rgb(172, 172, 172) ;
+}
+header.retourblanc
+{
+    transition: 1s;
+    border-bottom:1.5px solid #e4e4e4;
+    background-color: #fffffff3;
+}
+
+.form {
+    position: relative
+}
+.form .fa-search {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #9ca3af
+}
+.left-pan {
+    padding-left: 7px
+}
+.left-pan i {
+    padding-left: 10px
+}
+.form-input {
+    height: 55px;
+    text-indent: 33px;
+    border-radius: 10px
+}
+.form-input:focus {
+    box-shadow: none;
+    border: none
+}
+            
+/* searchbar */
+.input {
+    margin: 1% auto;
+    padding: 20px;
+    font-family: verdana;
+}
+.input h1 {
+    text-align : center;
+    text-transform: capitalize;
+    margin-bottom: 3%;
+}
+.input input {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    height: 34px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 20px;
+    padding: 1px 7px;
+    text-transform: capitalize;
+}
+
+
+#content {
+    position: absolute; 
+    width:400px;
+    background: #fff;
+    border: 2px solid #ececec;
+    border-radius : 0px 0px 5px 5px;
+    text-transform: capitalize;
+    margin-top: 5px;
+}
+/* #content {
+    position: absolute;
+    background: red;
+    border: none;
+    width: 60%;
+    margin: 0 auto;
+    padding: 1px 7px;
+    text-transform: capitalize;
+    color: #ccc;
+    font-size: 20px;
+} */
+
+#content ul li {
+    list-style: none;
+}
+#content ul li a{
+    text-decoration: none;
+    color: #212121;
+}
+#content ul li a:hover{
+    text-decoration: none;
+    color: rgb(246, 139, 30);
+}
+#content ul li .catgr:hover{
+    text-decoration: none;
+    color: rgb(246, 139, 30);
+}
+#content ul li .catgr {
+    font-size: 18px; 
+    color: rgb(154, 154, 154);
+}
